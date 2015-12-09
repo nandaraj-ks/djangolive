@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html ng-app="test">
+    <head>
+        <script src="/static/js/jquery-1.10.2.js"></script>
+        <!-- 
+        <script type="text/javascript" src="/static/js/angular.min.js"></script>
+         -->
+        <script type="text/javascript" src="/static/js/angular.js"></script>
+        <script type="text/javascript" src="/static/js/app.js"></script>
+        <script type="text/javascript" src="/static/js/controller.js"></script>
+        <title>Test Page</title>
+    </head>
+    <body>
+        <input type="text" name="comment" ng-model="test_comment">
+        <p>[[ test_comment ]]</p>
+        <!-- <p ng-model="test_comment"></p> -->
+    </body>
+</html>
