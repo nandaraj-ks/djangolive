@@ -16,14 +16,11 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from web.api import WhateverResource
-
 from web.views import HomePage
 
 whatever_resource = WhateverResource()
 
 urlpatterns = [
-    url(r'^api/', include(whatever_resource.urls)),
     url(r'^settings_page/', include(admin.site.urls)),
     url(r'^', HomePage.as_view(), name="home"),
 ]
