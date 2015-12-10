@@ -18,3 +18,5 @@ class TaskTestCase(TestCase):
         print "testttttt"
         new_task = Task.objects.create(name="Django Test")
         self.assertEqual(new_task.is_completed, False)
+
+#hello
